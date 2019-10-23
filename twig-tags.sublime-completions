@@ -1,0 +1,86 @@
+{
+  "scope": "text.html.basic.twig",
+
+  "completions": [
+    {
+      "trigger": "apply\tTwig apply",
+      "contents": "{% apply ${1:name} %}\n\t${2:content}\n{% endapply %}${0}"
+    },
+    {
+      "trigger": "autoescape\tTwig autoescape",
+      "contents": "{% autoescape ${1:'html|js'} %}\n\t${2:content}\n{% endautoescape %}${0}"
+    },
+    {
+      "trigger": "block\tTwig block",
+      "contents": "{% block ${1:name} %}\n\t${2:content}\n{% endblock %}${0}"
+    },
+    {
+      "trigger": "embed\tTwig embed",
+      "contents": "{% embed ${1:'filename'} %}\n\t${2:content}\n{% endembed %}${0}"
+    },
+    {
+      "trigger": "for\tTwig for",
+      "contents": "{% for ${1:item} in ${2:items} %}\n\t{{ ${1:item} }}\n{% endfor %}${0}"
+    },
+    {
+      "trigger": "if\tTwig if",
+      "contents": "{% if ${1:true} %}\n\t${2:content}\n{% endif %}${0}"
+    },
+    {
+      "trigger": "macro\tTwig macro",
+      "contents": "{% macro ${1:name}${2:(${3:args...})} %}\n\t${4:content}\n{% endmacro %}${0}"
+    },
+    {
+      "trigger": "sandbox\tTwig sandbox",
+      "contents": "{% sandbox %}\n\t${1:content}\n{% endsandbox %}${0}"
+    },
+    {
+      "trigger": "setend\tTwig set group",
+      "contents": "{% set ${1:name} %}\n\t${2:content}\n{% endset %}${0}"
+    },
+    {
+      "trigger": "verbatim\tTwig verbatim",
+      "contents": "{% verbatim %}\n\t${1:content}\n{% endverbatim %}${0}"
+    },
+    {
+      "trigger": "with\tTwig with",
+      "contents": "{% with ${1:vars}${2: only} %}\n\t${3:content}\n{% endwith %}${0}"
+    },
+    {
+      "trigger": "deprecated\tTwig deprecated",
+      "contents": "{% deprecated '${1:message}' %}${0}"
+    },
+    {
+      "trigger": "do\tTwig do",
+      "contents": "{% do ${1:expression} %}${0}"
+    },
+    {
+      "trigger": "extends\tTwig extends",
+      "contents": "{% extends '${1:filename}' %}${0}"
+    },
+    {
+      "trigger": "flush\tTwig flush",
+      "contents": "{% flush %}${0}"
+    },
+    {
+      "trigger": "from\tTwig from",
+      "contents": "{% from '${1:filename}' import ${2:component}${3: as ${4:element}} %}${0}"
+    },
+    {
+      "trigger": "import\tTwig import",
+      "contents": "{% import '${1:filename}' as ${2:element} %}${0}"
+    },
+    {
+      "trigger": "include\tTwig include",
+      "contents": "{% include '${1:filename}'${2: with ${3:vars}${4: only}} %}${0}"
+    },
+    {
+      "trigger": "set\tTwig set",
+      "contents": "{% set ${1:name} = ${2:'value'} %}${0}"
+    },
+    {
+      "trigger": "use\tTwig use",
+      "contents": "{% use '${1:filename}'${2: with ${3:component}${4: as ${5:element}}} %}${0}"
+    }
+  ]
+}

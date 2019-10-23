@@ -1,0 +1,93 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: Twig Object
+file_extensions:
+  - twig
+scope: meta.object.twig
+hidden: true
+
+contexts:
+  main:
+    - include: vars
+    - include: strings
+    - include: pipe
+    - include: tilde
+    - include: compare
+    - include: spread
+    - include: ternary
+    - include: functions
+    - include: constants
+    - include: named
+
+  vars:
+    - match: '(?:true|false|null|none)[a-z]+'
+      scope: variable.other.twig
+    - match: '[0-9]+'
+      scope: constant.numeric.twig
+    - match: '\.'
+      scope: punctuation.separator.twig
+
+  pipe:
+    - match: '\s?(\|)\s?([a-z_-]+)'
+      captures:
+        1: keyword.operator.logical.pipe.twig
+        2: support.function.filter.twig
+
+  tilde:
+    - match: '\s(~)\s'
+      captures:
+        1: keyword.operator.logical.tilde.twig
+
+  compare:
+    - match: '\s(in|is)\s'
+      captures:
+        1: keyword.operator.logical.compare.twig
+
+  spread:
+    - match: '(\.\.)'
+      captures:
+        1: keyword.operator.logical.spread.twig
+
+  # there are issue here still...
+  ternary:
+    - match: '(\?).*(:)'
+      captures:
+        1: keyword.operator.logical.ternary.twig
+        2: keyword.operator.logical.ternary.twig
+
+  functions:
+    - match: '(attribute|block|constant|cycle|date|divisible by|dump|include|max|min|parent|random|range|source|template_from_string)'
+      captures:
+        1: support.function.twig
+
+  constants:
+    - match: '(true|false|null)'
+      captures:
+        1: constant.language.twig
+
+  named:
+    - match: '(=)'
+      captures:
+        1: keyword.operator.assignment.twig
+
+  strings:
+    - match: "'"
+      scope: punctuation.definition.string.begin.twig
+      push:
+        - meta_scope: string.quoted.single.twig
+        - match: "(')|(\n)"
+          captures:
+            1: punctuation.definition.string.end.twig
+            2: invalid.illegal.newline.twig
+          pop: true
+
+    - match: '"'
+      scope: punctuation.definition.string.begin.twig
+      push:
+        - meta_scope: string.quoted.double.twig
+        - match: '(")|(\n)'
+          captures:
+            1: punctuation.definition.string.end.twig
+            2: invalid.illegal.newline.twig
+          pop: true
