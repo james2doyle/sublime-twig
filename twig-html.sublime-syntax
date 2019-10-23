@@ -5,7 +5,7 @@ name: Twig
 file_extensions:
   - html
   - twig
-scope: text.html.basic.twig
+scope: source.twig
 
 contexts:
   main:
