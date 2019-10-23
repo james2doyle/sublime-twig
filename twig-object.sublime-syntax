@@ -1,10 +1,11 @@
 %YAML 1.2
 ---
 # http://www.sublimetext.com/docs/3/syntax.html
-name: Twig
+name: Twig Object
 file_extensions:
   - twig
 scope: meta.object.twig
+hidden: true
 
 contexts:
   main:
@@ -20,7 +21,7 @@ contexts:
     - include: named
 
   vars:
-    - match: '(?:true|false|null|none)[a-z]+'
+    - match: '(?:true|false|null|none|defined|empty|even|iterable|odd)[a-z]+'
       scope: variable.other.twig
     - match: '[0-9]+'
       scope: constant.numeric.twig
@@ -61,7 +62,7 @@ contexts:
         1: support.function.twig
 
   constants:
-    - match: '(true|false|null)'
+    - match: '(true|false|null|none|defined|empty|even|iterable|odd)'
       captures:
         1: constant.language.twig
 

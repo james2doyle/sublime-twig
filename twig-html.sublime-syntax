@@ -6,7 +6,6 @@ file_extensions:
   - html
   - twig
 scope: text.html.basic.twig
-hidden: true
 
 contexts:
   main:
