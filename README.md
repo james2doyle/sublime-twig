@@ -10,6 +10,8 @@
 - More completions (eventually)
 - Uses native Sublime syntax highlighting, not Textmate bundle conversion
 
+![Demo of the highlighting](demo.png)
+
 ### Usage
 
 *With Git*

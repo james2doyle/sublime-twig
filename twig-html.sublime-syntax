@@ -1,0 +1,39 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: Twig
+file_extensions:
+  - html
+  - twig
+scope: text.html.basic.twig
+hidden: true
+
+contexts:
+  main:
+    - match: ''
+      push: scope:text.html.basic
+      with_prototype:
+
+        - match: '{#'
+          scope: punctuation.definition.comment.begin.twig
+          push:
+            - meta_scope: comment.block.twig
+            - match: '#}'
+              captures:
+                1: punctuation.definition.comment.end.twig
+                2: invalid.illegal.newline.twig
+              pop: true
+
+        - match: '{{-?~?'
+          scope: punctuation.definition.object.begin.twig
+          embed: scope:meta.object.twig
+          escape: '-?}}'
+          escape_captures:
+            0: punctuation.definition.object.end.twig
+
+        - match: '{%-?'
+          scope: punctuation.definition.tag.begin.twig
+          embed: scope:meta.tag.twig
+          escape: '-?%}'
+          escape_captures:
+            0: punctuation.definition.tag.end.twig
