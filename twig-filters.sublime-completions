@@ -1,0 +1,226 @@
+{
+  "scope": "source.twig text.html.basic meta.object.twig",
+
+  "completions": [
+    {
+      "trigger": "apply\tTwig apply",
+      "contents": "{% apply ${1:name} %}\n\t${2:content}\n{% endapply %}${0}"
+    },
+    {
+      "trigger": "abs\tTwig abs",
+      "contents": "abs${0}"
+    },
+    {
+      "trigger": "batch\tTwig batch",
+      "contents": "batch(${1:3}, '${2:No Items}')${0}"
+    },
+    {
+      "trigger": "capitalize\tTwig capitalize",
+      "contents": "capitalize${0}"
+    },
+    {
+      "trigger": "column\tTwig column",
+      "contents": "column('${1:key}')${0}"
+    },
+    {
+      "trigger": "convert_encoding\tTwig convert_encoding",
+      "contents": "convert_encoding('${1:UTF-8}', '${2:iso-2022-jp}')${0}"
+    },
+    {
+      "trigger": "country_name\tTwig country_name",
+      "contents": "country_name${1:('${2:fr}')}${0}"
+    },
+    {
+      "trigger": "currency_name\tTwig currency_name",
+      "contents": "currency_name${1:('${2:fr_FR}')}${0}"
+    },
+    {
+      "trigger": "currency_symbol\tTwig currency_symbol",
+      "contents": "currency_symbol${1:('${2:fr}')}${0}"
+    },
+    {
+      "trigger": "data_uri\tTwig data_uri",
+      "contents": "data_uri${1:(${2:mime='${3:text/html}'}${4:, ${5:parameters={charset: '${6:ascii}'}}})}${0}"
+    },
+    {
+      "trigger": "date\tTwig date",
+      "contents": "date('${1:Y-m-d}'${2:, '${3:Europe/Paris}'})${0}"
+    },
+    {
+      "trigger": "date_modify\tTwig date_modify",
+      "contents": "date_modify('${1:+1 day}')${0}"
+    },
+    {
+      "trigger": "default\tTwig default",
+      "contents": "default(${1:'value'})${0}"
+    },
+    {
+      "trigger": "e\tTwig escape",
+      "contents": "e${1:('${2:html|js|css|url|html_attr}')}${0}"
+    },
+    {
+      "trigger": "escape\tTwig escape",
+      "contents": "escape${1:('${2:html|js|css|url|html_attr}')}${0}"
+    },
+    {
+      "trigger": "filter\tTwig filter",
+      "contents": "filter(${1:value} => ${1:value}${2: and condition})${0}"
+    },
+    {
+      "trigger": "first\tTwig first",
+      "contents": "first${0}"
+    },
+    {
+      "trigger": "format\tTwig format",
+      "contents": "format(${1:args...})${0}"
+    },
+    {
+      "trigger": "format_currency\tTwig format_currency",
+      "contents": "format_currency('${1:EUR}'${2:, {${3:rounding_mode: '${4:floor}'}${5:, fraction_digit: ${6:4}}}})${0}"
+    },
+    {
+      "trigger": "format_date\tTwig format_date",
+      "contents": "format_date(${1:'${2:none|short|full}'${2:, '${3:none|short|full}'}${$:4, locale='${5:fr}'${6:, pattern='${7:hh 'oclock' a, zzzz}'}}})${0}"
+    },
+    {
+      "trigger": "format_datetime\tTwig format_datetime",
+      "contents": "format_datetime(${1:'${2:none|short|full}'${2:, '${3:none|short|full}'}${$:4, locale='${5:fr}'${6:, pattern='${7:hh 'oclock' a, zzzz}'}}})${0}"
+    },
+    {
+      "trigger": "format_number\tTwig format_number",
+      "contents": "format_number('${1:EUR}'${2:, {${3:rounding_mode: '${4:floor}'}${5:, fraction_digit: ${6:4}}}})${0}"
+    },
+    {
+      "trigger": "format_time\tTwig format_time",
+      "contents": "format_time(${1:'${2:none|short|full}'${2:, '${3:none|short|full}'}${$:4, locale='${5:fr}'${6:, pattern='${7:hh 'oclock' a, zzzz}'}}})${0}"
+    },
+    {
+      "trigger": "inline_css\tTwig inline_css",
+      "contents": "inline_css${1:(source('${2:some_styles.css}')}${0}"
+    },
+    {
+      "trigger": "join\tTwig join",
+      "contents": "join${1:'${2:, }'${3:, '${4: and }'}}${0}"
+    },
+    {
+      "trigger": "json_encode\tTwig json_encode",
+      "contents": "json_encode${1:(${2:constant('${3:JSON_PRETTY_PRINT}')})}${0}"
+    },
+    {
+      "trigger": "keys\tTwig keys",
+      "contents": "keys${0}"
+    },
+    {
+      "trigger": "language_name\tTwig language_name",
+      "contents": "language_name${1:('${2:fr}')}${0}"
+    },
+    {
+      "trigger": "last\tTwig last",
+      "contents": "last${0}"
+    },
+    {
+      "trigger": "length\tTwig length",
+      "contents": "length${0}"
+    },
+    {
+      "trigger": "locale_name\tTwig locale_name",
+      "contents": "locale_name${1:('${2:fr}')}${0}"
+    },
+    {
+      "trigger": "lower\tTwig lower",
+      "contents": "lower${0}"
+    },
+    {
+      "trigger": "map\tTwig map",
+      "contents": "map((${1:key}${2:, value}) => ${3:\"#{${1:key}} #{${2:value}}\"})${0}"
+    },
+    {
+      "trigger": "merge\tTwig merge",
+      "contents": "merge(${1:['${2:value}']})${0}"
+    },
+    {
+      "trigger": "nl2br\tTwig nl2br",
+      "contents": "nl2br${0}"
+    },
+    {
+      "trigger": "number_format\tTwig number_format",
+      "contents": "number_format${1:(${2:2}${2:, '${3:.}'}${4:, '${5:,}'})}${0}"
+    },
+    {
+      "trigger": "raw\tTwig raw",
+      "contents": "raw${0}"
+    },
+    {
+      "trigger": "reduce\tTwig reduce",
+      "contents": "reduce((${1:carry}, ${2:value}) => ${1:carry}${2: + ${3:value}}${4:, ${5:initial}})${0}"
+    },
+    {
+      "trigger": "replace\tTwig replace",
+      "contents": "replace(${1:{'%this%': foo, '%that%': 'bar'}})${0}"
+    },
+    {
+      "trigger": "reverse\tTwig reverse",
+      "contents": "reverse${1:(${2:true})}${0}"
+    },
+    {
+      "trigger": "round\tTwig round",
+      "contents": "round${1:(${2:1}${3:, '${common|ceil|floor}'})}${0}"
+    },
+    {
+      "trigger": "slice\tTwig slice",
+      "contents": "slice${1:(${2:start}${3:, ${4:length}})}${0}"
+    },
+    {
+      "trigger": "sort\tTwig sort",
+      "contents": "sort${1:((${2:a}, ${3:b}) => ${2:a} <=> ${3:b})}${0}"
+    },
+    {
+      "trigger": "spaceless\tTwig spaceless",
+      "contents": "spaceless${0}"
+    },
+    {
+      "trigger": "split\tTwig split",
+      "contents": "split${1:','${2:, ${3:3}}}${0}"
+    },
+    {
+      "trigger": "striptags\tTwig striptags",
+      "contents": "striptags${1:('${2:<br><p>}')}${0}"
+    },
+    {
+      "trigger": "timezone_name\tTwig timezone_name",
+      "contents": "timezone_name${1:('${2:fr}')}${0}"
+    },
+    {
+      "trigger": "title\tTwig title",
+      "contents": "title${0}"
+    },
+    {
+      "trigger": "trim\tTwig trim",
+      "contents": "trim${1:(${2:'${3: }'}${4:, '${5:right}'})}${0}"
+    },
+    {
+      "trigger": "uwordwrap\tTwig wordwrap",
+      "contents": "u.wordwrap(${1:5})${0}"
+    },
+    {
+      "trigger": "utruncate\tTwig truncate",
+      "contents": "u.truncate(${1:8}${2:, '${3:...}'})${0}"
+    },
+    {
+      "trigger": "usnake\tTwig snake",
+      "contents": "u.snake${0}"
+    },
+    {
+      "trigger": "ucameltitle\tTwig camel title",
+      "contents": "u.camel.title${0}"
+    },
+    {
+      "trigger": "upper\tTwig upper",
+      "contents": "upper${0}"
+    },
+    {
+      "trigger": "url_encode\tTwig url_encode",
+      "contents": "url_encode${0}"
+    }
+  ]
+}

@@ -26,9 +26,9 @@
 - "Package Control > Install Package"
 - Install "sublime-twig" package
 
-### TODO
+### TODOs
 
-- [x] tags
-- [ ] tests
-- [ ] filters
-- [ ] functions
+- [x] tag completions
+- [x] filter completions
+- [ ] test completions
+- [ ] function completions
