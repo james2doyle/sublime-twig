@@ -30,5 +30,5 @@
 
 - [x] tag completions
 - [x] filter completions
-- [ ] test completions
-- [ ] function completions
+- [x] function completions
+- [x] test completions

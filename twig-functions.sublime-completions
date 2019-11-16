@@ -1,0 +1,62 @@
+{
+  "scope": "source.twig text.html.basic meta.object.twig",
+
+  "completions": [
+    {
+      "trigger": "constant\tTwig constant",
+      "contents": "constant('${1:VALUE}'${2:, ${3:object}})${0}"
+    },
+    {
+      "trigger": "attribute\tTwig attribute",
+      "contents": "attribute(${1:object}, ${2:method}${3:, ${4:arguments}})${0}"
+    },
+    {
+      "trigger": "block\tTwig block",
+      "contents": "block('${1:name}'${2:, '${3:template.twig}'})${0}"
+    },
+    {
+      "trigger": "cycle\tTwig cycle",
+      "contents": "cycle(${1:array}${2:, ${3:index}})${0}"
+    },
+    {
+      "trigger": "date\tTwig date",
+      "contents": "date('${1:-1 days}'${2:, '${3:America/Vancouver}'})${0}"
+    },
+    {
+      "trigger": "html_classes\tTwig html_classes",
+      "contents": "html_classes('${1:class-names-or-object}')${0}"
+    },
+    {
+      "trigger": "include\tTwig include",
+      "contents": "include('${1:template.html}'${2:, ${3:variables}}${4:, ${5:with_context = false}})${0}"
+    },
+    {
+      "trigger": "max\tTwig max",
+      "contents": "max(${1:...values})${0}"
+    },
+    {
+      "trigger": "min\tTwig min",
+      "contents": "min(${1:...values})${0}"
+    },
+    {
+      "trigger": "parent\tTwig parent",
+      "contents": "parent()${0}"
+    },
+    {
+      "trigger": "random\tTwig random",
+      "contents": "random(${1:...values})${0}"
+    },
+    {
+      "trigger": "range\tTwig range",
+      "contents": "range(${1:...values})${0}"
+    },
+    {
+      "trigger": "source\tTwig source",
+      "contents": "source('${1:template.html}'${2:, ${3:ignore_missing = true}})${0}"
+    },
+    {
+      "trigger": "template_from_string\tTwig template_from_string",
+      "contents": "template_from_string('${1:string or template}'${2:, '${3:debug name}'})${0}"
+    },
+  ]
+}
