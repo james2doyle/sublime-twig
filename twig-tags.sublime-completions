@@ -1,5 +1,5 @@
 {
-  "scope": "source.twig text.html.basic",
+  "scope": "source.twig text.html.basic - source.twig text.html.basic meta.object.twig",
 
   "completions": [
     {
