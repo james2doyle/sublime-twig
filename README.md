@@ -8,6 +8,7 @@
 
 - Better highlighting, overall
 - More completions (eventually)
+- Line and block comments
 - Uses native Sublime syntax highlighting, not Textmate bundle conversion
 
 ![Demo of the highlighting](demo.png)
