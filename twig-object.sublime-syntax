@@ -2,8 +2,6 @@
 ---
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Twig Object
-file_extensions:
-  - twig
 scope: meta.object.twig
 hidden: true
 
