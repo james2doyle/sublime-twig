@@ -34,3 +34,4 @@
 - [x] filter completions
 - [x] function completions
 - [x] test completions
+- [ ] publish on Package Control
