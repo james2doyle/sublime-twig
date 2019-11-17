@@ -28,6 +28,7 @@
 
 ### TODOs
 
+- [x] comments
 - [x] tag completions
 - [x] filter completions
 - [x] function completions
